@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/background_welcomepage"
     tools:context=".RegisterAndLogin">
 
@@ -18,67 +19,77 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.159" />
+        app:layout_constraintVertical_bias="0.12" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome to Diet Tracker"
-        android:textSize="20sp"
+        android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintVertical_bias="0.054" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editUserEmailLog"
         android:layout_width="295dp"
-        android:layout_height="47dp"
+        android:layout_height="48dp"
         android:ems="10"
+        android:hint="@string/hint_username"
         android:inputType="text"
+        android:textColor="@color/black"
         android:textSize="15sp"
-        android:hint="Username"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.06" />
+        app:layout_constraintVertical_bias="0.071" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/editPasswordLog"
         android:layout_width="295dp"
-        android:layout_height="47dp"
+        android:layout_height="48dp"
         android:ems="10"
+        android:hint="@string/hint_password"
         android:inputType="text"
+        android:textColor="@color/black"
         android:textSize="15sp"
-        android:hint="Password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/editUserEmailLog"
         app:layout_constraintVertical_bias="0.097" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/buttonLoginLog"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="@string/button_login_log"
+        android:gravity="center"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2"
+        app:layout_constraintTop_toBottomOf="@+id/editPasswordLog"
         app:layout_constraintVertical_bias="0.123" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:id="@+id/buttonRegisterLog"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="@string/button_register_log"
+        android:gravity="center"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonLoginLog"
+        app:layout_constraintVertical_bias="0.083" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

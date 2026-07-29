@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Personal-Diet-Tracker</string>
+    <string name="button_login_log">Login</string>
+    <string name="button_register_log">Register</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
 </resources>
