@@ -24,6 +24,7 @@
         <activity
             android:name=".Register"
             android:exported="false"
+            android:parentActivityName=".RegisterAndLogin"
             android:windowSoftInputMode="adjustResize" />
     </application>
 
