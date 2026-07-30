@@ -33,7 +33,6 @@
         <activity
             android:name=".ViewMeal"
             android:exported="false"
-            android:parentActivityName=".Homepage"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".AddItem"
