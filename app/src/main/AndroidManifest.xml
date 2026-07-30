@@ -30,6 +30,11 @@
             android:name=".Homepage"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ViewMeal"
+            android:exported="false"
+            android:parentActivityName=".Homepage"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
