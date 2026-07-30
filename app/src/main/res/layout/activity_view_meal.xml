@@ -120,16 +120,16 @@
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <LinearLayout
-        android:layout_width="358dp"
-        android:layout_height="112dp"
-        android:orientation="horizontal"
+        android:layout_width="354dp"
+        android:layout_height="73dp"
         android:gravity="center_horizontal"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialToolbar2"
-        app:layout_constraintVertical_bias="0.906">
+        app:layout_constraintVertical_bias="0.854">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonSave"
@@ -137,25 +137,25 @@
             android:layout_height="56dp"
             android:layout_marginEnd="8dp"
             android:text="Save"
+            android:textAlignment="center"
             android:textSize="16sp"
-            app:cornerRadius="28dp"
-            android:textAlignment="center">
-        </com.google.android.material.button.MaterialButton>
+            app:cornerRadius="28dp"></com.google.android.material.button.MaterialButton>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonSaveRecurring"
             android:layout_width="170dp"
             android:layout_height="56dp"
-            android:layout_marginStart="8dp"
-            android:text="Save as recurring meal"
-            android:textSize="14sp"
-            android:textColor="@android:color/white"
+            android:layout_marginEnd="8dp"
             android:maxLines="2"
+            android:text="Save as recurring meal"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
             app:backgroundTint="?attr/colorPrimary"
             app:cornerRadius="28dp">
 
-    </com.google.android.material.button.MaterialButton>
+        </com.google.android.material.button.MaterialButton>
 
     </LinearLayout>
-    
+
 </androidx.constraintlayout.widget.ConstraintLayout>
