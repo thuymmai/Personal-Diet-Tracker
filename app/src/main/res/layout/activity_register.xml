@@ -87,21 +87,34 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:onClick="onButtonClick"
         android:text="Back"
-        android:textAllCaps="false"
         android:textAlignment="center"
+        android:textAllCaps="false"
         android:textSize="17sp"
-        app:rippleColor="#f9c7c7"
-        app:icon="@drawable/baseline_arrow_back_ios_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonRegisterReg"
         app:layout_constraintVertical_bias="0.083"
+        app:rippleColor="#FDD2C5"
         app:strokeColor="#f4cca5"
         app:strokeWidth="1dp">
 
     </com.google.android.material.button.MaterialButton>
+
+    <ImageButton
+        android:id="@+id/imageBackButton"
+        android:layout_width="31dp"
+        android:layout_height="27dp"
+        android:backgroundTint="#f4cca5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.801"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
