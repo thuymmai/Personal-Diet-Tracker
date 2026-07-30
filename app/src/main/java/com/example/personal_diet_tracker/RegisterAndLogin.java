@@ -21,5 +21,11 @@ public class RegisterAndLogin extends AppCompatActivity {
             Intent intent = new Intent(RegisterAndLogin.this, Register.class);
             startActivity(intent);
         });
+
+        Button login = findViewById(R.id.buttonLoginLog);
+        login.setOnClickListener(view -> {
+            Intent intent = new Intent(RegisterAndLogin.this, Homepage.class);
+            startActivity(intent);
+        });
     }
 }

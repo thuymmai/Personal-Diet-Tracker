@@ -5,6 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FDE5D8"
     tools:context=".Homepage">
+
+    
 
 </androidx.constraintlayout.widget.ConstraintLayout>
