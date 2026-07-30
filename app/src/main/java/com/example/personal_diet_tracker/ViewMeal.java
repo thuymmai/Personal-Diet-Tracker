@@ -9,6 +9,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.appbar.MaterialToolbar;
+
 public class ViewMeal extends AppCompatActivity {
 
     @Override
@@ -16,7 +18,12 @@ public class ViewMeal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this, SystemBarStyle.dark(1));
         setContentView(R.layout.activity_view_meal);
+
+        MaterialToolbar toolbar = findViewById(R.id.materialToolbar2);
+        setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(view -> finish());
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, 0, systemBars.right, systemBars.bottom);
