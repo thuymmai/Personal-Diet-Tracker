@@ -1,12 +1,11 @@
 package com.example.personal_diet_tracker;
 
+import android.content.Intent;
 import android.os.Bundle;
-
+import android.widget.Button;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
 
 public class RegisterAndLogin extends AppCompatActivity {
 
@@ -15,10 +14,18 @@ public class RegisterAndLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_register_and_login);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+
+        Button register = findViewById(R.id.buttonRegisterLog);
+        register.setOnClickListener(view -> {
+            Intent intent = new Intent(RegisterAndLogin.this, Register.class);
+            startActivity(intent);
+        });
+
+        Button login = findViewById(R.id.buttonLoginLog);
+        login.setOnClickListener(view -> {
+            Intent intent = new Intent(RegisterAndLogin.this, Homepage.class);
+            startActivity(intent);
         });
     }
 }
